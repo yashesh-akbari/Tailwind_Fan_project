@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/output.css" />
+    <title>tailwindcss fan</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+      /* Adding spin animation */
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        /* 25% {
+          transform: rotate(30deg);
+        }
+        50% {
+          transform: rotate(90deg);
+        } */
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .animate-spin {
+        animation: spin 0.5s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="h-screen m-0 p-0">
+    <div class="m-0 p-0">
+      <div
+        id="spin"
+        class="border-black absolute rounded-full border-8 size-32 m-30 p-30 bg-amber-300 shadow-2xl shadow-orange-400"
+      >
+        <img
+          src="/fan1.jpeg"
+          class="top-5 left-5 absolute bg-red-600 rounded-full border-2 size-50 shadow-2xl shadow--400s hover:rotate-360 transition-transform duration-1000 cursor-auto"
+        />
+      </div>
+      <p
+        class="bg-red-700 w-12 h-30 border-2 shadow-black-600 block text-4xl absolute left-57 top-92 rounded shadow-orange-600 shadow-2xl"
+      ></p>
+      <div
+        class="bg-red-700 p-10 w-60 ml-35 absolute top-120 rounded-3xl shadow-orange-600 shadow-2xl"
+      >
+        <!-- Button will toggle animation on click -->
+        <button
+          id="toggleButton"
+          class="bg-blue-500 absolute left-20 w-20 h-10 top-5 rounded-3xl shadow-blue-600 shadow-2xl"
+        >
+          ON||OFF
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function click() {
+        var spinElement = document.getElementById("spin");
+
+        // Toggle the animation class
+        if (spinElement.classList.contains("animate-spin")) {
+          spinElement.classList.remove("animate-spin");
+        } else {
+          spinElement.classList.add("animate-spin");
+        }
+      }
+
+      // Add event listener to the button
+      document.getElementById("toggleButton").addEventListener("click", click);
+    </script>
+  </body>
+</html>
