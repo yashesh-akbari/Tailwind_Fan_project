@@ -1,7 +1,3 @@
-It looks like you're working on a Tailwind CSS project, and you want a solid **README.md** file to showcase your repository with some good views. A well-organized README can help others understand your project better and encourage more people to check it out!
-
-Here’s a **sample README.md** for your project:
-
 ---
 
 # Tailwind Fan Project
@@ -18,7 +14,7 @@ A simple and interactive fan animation built with **Tailwind CSS** and **HTML**.
 
 ## Demo
 
-Check out the live demo [here](#) (replace with actual URL if available).
+Check out the live demo (https://github.com/yashesh-akbari/Tailwind_Fan_project/blob/main/fan_tailwind_projects)
 
 ## Technologies Used
 
@@ -110,7 +106,3 @@ Contributions are welcome! Feel free to fork this project, submit issues, and op
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ---
-
-This **README.md** provides clear information on what the project is, how to install it, and how to use it. It also includes some simple sections like **contributing**, **license**, and **how it works**, which help people understand your project better and encourage them to contribute.
-
-Feel free to adjust the information to better match your actual project setup, and don’t forget to replace the demo URL and other placeholders with actual links when necessary!
